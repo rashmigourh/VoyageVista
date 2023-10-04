@@ -1,0 +1,140 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  header .logo {
+    font-size: 2.5rem;
+  }
+  header .navbar .navigate a{
+    font-size: 2rem;
+  }
+  .explore-content .explore-data {
+    font-size: 1.5rem;
+    padding: 2rem 5%;
+  }
+  .explore-container .explore-content{
+    padding-top: 45rem;
+  } 
+}
+
+@media (max-width: 917px) {
+  header {
+    padding: 2rem;
+
+  }
+  #menu-bar {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #2696E9;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.5s ease;
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar .navigate a {
+    display: block;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background-color: white;
+    color: black;
+  }
+
+  header .navbar .navigate a:hover:before {
+    width: 0%;
+  }
+
+  section {
+    padding: 2rem;
+  }
+  .template1 .image1 img{
+    width: 100%;
+    margin-left: 0rem;
+    }
+     .heading span{
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+    .template1 .content1{
+      font-size: 1.5rem;
+    }
+    .explore-content .explore-data {
+      font-size: 1.5rem;
+      padding: 2rem 5%;
+    }
+    .explore-container .explore-content{
+      padding-top: 45rem;
+    } 
+}
+@media (max-width: 748px ){
+  .explore-content .explore-data {
+    font-size: 1.7rem;
+    padding: 10rem 5%;
+  }
+  .explore-container .explore-content{
+    padding-top: 10rem;
+  } 
+  
+}
+
+@media (max-width: 543px ){
+  .packages .heading{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .explore-container .explore-content{
+    padding-top: 10rem;
+  }
+}
+@media (max-width: 450px ) {
+  html {
+    font-size: 50%;
+  }
+  .login-form-container form {
+    width: 38rem;
+  }
+  .login-form-container #form-close {
+    margin-left: 32rem;
+  }
+  .template1 .image1 img{
+    width: 100%;
+    }
+     .heading{
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .explore-container .explore-content{
+      padding-top: 20rem;
+    }
+    .explore-content .explore-data {
+      font-size: 2rem;
+      padding: 5rem 5%;
+    }
+    .explore-content .explore-user {
+      flex-direction: column;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+      color: black;
+    }
+    .explore-user .explore-name{
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 0;
+    }
+}
+@media (max-width: 321px ){
+  .heading span{
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+  
+}
