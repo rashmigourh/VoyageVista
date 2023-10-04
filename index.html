@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Travel_CSS/travel.css" />
+  <link rel="stylesheet" href="fonticon/css/all.css" />
+  <link rel="stylesheet" href="Responsive_CSS/travelPhone.css" />
+  <title>VoyageVista</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" href="paperPlane.png">
+  <link rel="icon" type="image/png" sizes="96x966" href="../Travel website/Icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../Travel website/Icons/favicon-16x16.png">
+  <link rel="apple-icon" type="image/png" sizes="180x180" href="../Travel website/Icons/apple-icon-180x180.png">
+
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i> VoyageVista</a>
+    <nav class="navbar">
+      <div class="navigate">
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#">Contact us</a>
+        <a href="#review">Review</a>
+      </div>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+  </header>
+
+  <!-- login-form -->
+  <div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="#">
+      <h3>Login</h3>
+      <input type="email" class="box" placeholder="enter your email" required />
+
+      <div class="form-group">
+      <input type="password" id="password-log" class="box" placeholder="enter your password" required />
+       <span class="eye-icon" onclick="togglePasswordVisibility()">
+                    <i class="fa-solid fa-eye-slash"></i>
+                </span>
+              </div>
+
+      <input type="submit" value="Login now" class="btn" />
+      <input type="checkbox" id="remember" />
+      <label for="remember">remember me</label>
+      <p>forget password? <a href="#">click here</a></p>
+      <p>don't have an account? <a href="#">register now</a></p>
+    </form>
+  </div>
+
+  <!-- home section i.e videos in background-->
+  <section class="home">
+    <video src="videos/video1.mp4" class="video-slide active" loop autoplay muted></video>
+    <video src="videos/video2.mp4" class="video-slide" loop autoplay muted></video>
+    <video src="videos/video3.mp4" class="video-slide" loop autoplay muted></video>
+    <video src="videos/video4.mp4" class="video-slide" loop autoplay muted></video>
+
+    <div class="content active">
+      <h3>adventure is worthWhile</h3>
+      <p>discover new places with us, adventure awaits</p>
+      <a href="#" class="btn">Discover more</a>
+    </div>
+
+    <div class="content">
+      <h3> travel to discover new things</h3>
+      <p>journey itself is the destination, discover yourself</p>
+      <a href="#" class="btn">Discover more</a>
+    </div>
+
+    <div class="content">
+      <h3>explore unknown paradises</h3>
+      <p> experience what you have not experienced before, with us</p>
+      <a href="#" class="btn">Discover more</a>
+    </div>
+
+    <div class="content">
+      <h3>amaze yourself by exploring</h3>
+      <p>The best part of a journey is that it often leads us to discover the unexpected</p>
+      <a href="#" class="btn">Discover more</a>
+    </div>
+
+    <!-- video radio buttons -->
+    <div class="controls">
+      <!-- slider navigation  : nav-btn-->
+      <span class="vid-btn active"></span>
+      <span class="vid-btn"></span>
+      <span class="vid-btn"></span>
+      <span class="vid-btn"></span>
+    </div>
+  </section>
+
+  <!-- TEMPLATE 1-->
+  <section class="template1">
+    <div class="image1" data-aos="fade-up">
+      <img src="web Images/luggage.jpg" alt="tour" />
+    </div>
+    <div class="content1" data-aos="fade-up">
+      <h2>It's time to start your adventure</h2>
+      <p>
+        The world is waiting for you to explore its wonders and we are here to guide and help you out.
+        We're passionate about exploring the world and sharing our adventures with fellow travelers like you.
+        Our mission is to inspire, inform, and guide you on your journey to discovering the beauty and diversity of our
+        planet.
+      </p>
+      <p>Whether you're an intrepid explorer seeking off-the-beaten-path destinations, a family in search of memorable
+        vacations,
+        or a solo traveler ready to embark on transformative experiences, Join us as we navigate the globe, one
+        incredible destination at a time.
+        Let's embark on this extraordinary adventure together!
+      </p>
+    </div>
+  </section>
+
+  <!-- popular destinations -->
+  <setion class="packages" id="packages">
+
+    <div class="heading" data-aos="fade-up">
+      <div class="word">
+        <span>P</span>
+        <span>O</span>
+        <span>P</span>
+        <span>U</span>
+        <span>L</span>
+        <span>A</span>
+        <span>R</span>
+      </div>
+      <span class="space"></span>
+      <div class="word">
+        <span>D</span>
+        <span>E</span>
+        <span>S</span>
+        <span>T</span>
+        <span>I</span>
+        <span>N</span>
+        <span>A</span>
+        <span>T</span>
+        <span>I</span>
+        <span>O</span>
+        <span>N</span>
+        <span>S</span>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/tajMaha_India.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> Taj Mahal, India</h3>
+          <h4>7 Nights/8 Days</h4>
+          <p>
+            Agra is best known for the Taj Mahal, Angoori Petha and more.
+            Plan with us for this mini trip including
+            upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-stroke"></i>
+          </div>
+          <div class="price">&#8377;29,500</div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/greatWallOf_china.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> Great Wall of China, China</h3>
+          <h4>3 Nights/4 Days</h4>
+          <p>
+            Famous for The Great Wall of China, The Forbidden City,
+            Giant Panda and much more.
+            Upto 4 Stars, Meals, Sightseeing, Cruise, Entry fee charges, Transfers....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price">&#8377;49,998<span> &#8377;55,000</span></div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/pyramids_Giza.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> Great Pyramid of Giza, Egypt</h3>
+          <h4>9 Nights/10 Days</h4>
+          <p>
+            Destinations include Nile Valley, Pyramids and Great Sphinx at Giza,
+            the Abu Simbel temples south of Aswan and more.
+            Upto 5 Stars, Meals, Sightseeing, Stay Included, Transfers....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-stroke"></i>
+          </div>
+          <div class="price">&#8377;89,699/-</div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/eiffel-towe_Paris.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> Eiffel-Tower, Paris</h3>
+          <h4>6 Nights/7 Days</h4>
+          <p>
+            Paris is known for its gorgeous, imposing monuments, iconic structures and the
+            preeminent of Paris's landmarks is the Eiffel Tower.Upto 4 Stars, Meals, Sightseeing, Stay Included,
+            Transfers....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price">&#8377;78,750 <span>&#8377;136,500/-</span></div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/sydneyperaHouse_Australia.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> Sydney Opera House, Australia</h3>
+          <h4>6 Nights/7 Days</h4>
+          <p>
+            Australia's spectacular natural environment, multicultural communities,
+            excellent food and wine, its weather and lifestyle and the friendliness
+            and openness of its people is attractive among tourist....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-stroke"></i>
+          </div>
+          <div class="price">&#8377;99,699</span></div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/India_Gate.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> India Gate, India</h3>
+          <h4>3 Nights/4 Days</h4>
+          <p>
+            This tourist destination exemplifies unity, valour, and remembrance as it
+            reminds us of the courage that has been displayed by our soldiers.Upto 5 Stars, street fooding, Airport
+            Pickup-Drop....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-stroke"></i>
+          </div>
+          <div class="price">&#8377;53,500<span></div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/maldives.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> Hulhumale Beach , Maldives</h3>
+          <h4>3 Nights/4 Days</h4>
+          <p>
+            Maldives best known for it's beaches which makes sure you enjoy your well-earned break without burning a
+            hole in your pocket.
+            Upto 5 Stars, Meals, Stay Included, Return Airport Transfers....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-stroke"></i>
+          </div>
+          <div class="price">&#8377;90,000<span>&#8377;100,000</span></div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/godafos_Iceland.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> Godafos, Iceland</h3>
+          <h4>4 Nights/5 Days</h4>
+          <p>
+            Iceland is renowned for its breathtaking waterfalls all over the country.
+            Gulfoss, Dettifoss, and Seljalandsfoss waterfalls are some of the most well-known.
+            Upto 3 Stars, Meals, Sightseeing, Stay Included, Transfers....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price">&#8377;129,150<span>&#8377;152,250</span></div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/niagaraFalls_Canada.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> Niagara Falls, Canada</h3>
+          <h4>7 Nights/8 Days</h4>
+          <p>
+            Popular activities for tourists are whale watching, enjoying
+            the busking in the inner harbour area and visiting world-famous Butchart Gardens.
+            Long Beach. Upto 3 Stars, Flights, Meals, Sightseeing, Stay Included, Transfers
+
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-stroke"></i>
+          </div>
+          <div class="price">&#8377;182,000<span>&#8377;281,780</span></div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/machu_picchu.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> Machu Picchu, Peru</h3>
+          <h4>3 Nights/4 Days</h4>
+          <p>
+            The ruins of Machu Picchu are the most internationally recognized of
+            all the ruins of Peru and therefore receive the most tourists.
+            Upto 3 Stars, Flights, Meals, Sightseeing, Stay Included, Transfers....
+
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-stroke"></i>
+          </div>
+          <div class="price">&#8377;46,990</span></div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/dubai-4044183_1280.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> Abu Dhabi, Dubai</h3>
+          <h4>3 Nights/4 Days</h4>
+          <p>
+            Dubai has grown to be known for its lavish architecture,
+            incredible skylines, giant shopping malls, Burj Khalifa.Upto 3 Stars, Meals, Sightseeing, Airport Transfer,
+            Entry Tickets, Visa...
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-stroke"></i>
+          </div>
+          <div class="price">&#8377;49,998</span></div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <div class="image">
+          <img src="web Images/santorini_Greece.jpg" />
+        </div>
+        <div class="content2">
+          <h3><i class="fas fa-map-marker-alt"></i> Santorini, Greece</h3>
+          <h4>5 Nights/6 Days</h4>
+          <p>
+            Some of the country's major tourist destinations include the capital city Athens,
+            the islands of Santorini, Mykonos, Rhodes, Corfu and Crete, as well as the peninsula of Chalkidice.
+            Upto 4 Stars, Meals, Sightseeing, Stay Included, Transfers....
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-stroke"></i>
+          </div>
+          <div class="price">&#8377;68,247<span>&#8377;89,249</span></div>
+          <div class="bookNow">
+            <a href="#">Book now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </setion>
+
+  <!-- gallery -->
+  <section class="gallery">
+    <div class="galllery-container">
+      <div class="image-gallery">
+        <div class="gallery-col" style="margin-top: 8rem;">
+          <img src="web Images/hiking.jpg" alt="hiking" data-aos="fade-up">
+        </div>
+        <div class="gallery-col">
+          <img src="web Images/windsurfing.jpg" alt="wind-surfing" data-aos="fade-up">
+          <img src="web Images/aurora.jpg" alt="aurora" data-aos="fade-up">
+          <img src="web Images/cappadocia_Turkey.jpg" alt="hot-air-ballon">
+        </div>
+      </div>
+      <div class="gallery-content">
+
+        <h2 class="titel" data-aos="fade-up">Our trip gallery that will insipire you</h2>
+        <p class="sub-title" data-aos="fade-up">Explore your suitable and dream places around the world</p>
+        <p data-aos="fade-up">were you can find your right destination. Unleash Your </p>
+        <p data-aos="fade-up">Adventurous Spirit, Amidst Nature's Majesty, main</p>
+        <p data-aos="fade-up">attractions of various countries, their culuture</p>
+        <p data-aos="fade-up">and colours by exploring.</p>
+        <div class="button" data-aos="fade-up">
+          <button class="btn">View All</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- explore -->
+  <div class="explore" id="explore">
+    <div class="explore-container">
+      <div class="explore-image" data-aos="fade-up">
+        <img src="web Images/boat-4899802_1280.jpg" alt="explore">
+        <div class="explore-shadow"></div>
+      </div>
+
+      <div class="explore-content">
+
+        <div class="explore-data">
+          <h2 class="title" data-aos="fade-up">Explore The Best Paradise</h2>
+          <p class="explore-description" data-aos="fade-up">
+            Exploring paradises such as island and valleys when travelling the world is one of the greatest
+            experiences when you travel, it offers you harmony and peace and you can enjoy it with great comfort.
+          </p>
+        </div>
+
+        <div class="explore-user" data-aos="fade-up">
+          <img src="web Images/id1.jpg" alt="">
+          <span class="explore-name">Laura Paul</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- services  -->
+  <section class="services" id="services">
+    <div class="heading" data-aos="fade-up">
+      <div class="word">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="cards" data-aos="fade-up">
+        <i class="fas fa-hotel"></i>
+        <h3>Affordable Hotels</h3>
+        <p>VoyageVista provide access to a vast database of hotels worldwide. Users can search for accommodations
+          based on factors like location, price range, star rating, and guest reviews. Booking a hotel through us
+          often comes with special offers and discounts.</p>
+      </div>
+
+
+      <div class="cards" data-aos="fade-up">
+        <i class="fas fa-car"></i>
+        <h3>Car Rentals</h3>
+        <p>VoyageVista often include options for renting cars at the destination, so that you can explore and can go
+          wherever you want without any issues. Users can specify their car
+          preferences, such as size and transmission type, and compare rental rates from different providers.</p>
+      </div>
+
+
+      <div class="cards" data-aos="fade-up">
+        <i class="fas fa-hiking"></i>
+        <h3>Travel Guides and Information</h3>
+        <p>VoyageVista often provide destination guides, travel tips, and information about popular attractions,
+          local customs, and visa requirements. This information helps travelers plan their itineraries.
+          Often feature special deals, promotions, and loyalty programs to save money on your travel expenses.</p>
+      </div>
+
+
+      <div class="cards" data-aos="fade-up">
+        <i class="fas fa-globe-asia"></i>
+        <h3>Around the world</h3>
+        <p>VoyageVista offer pre-packaged vacation deals that include a combination of flights, hotels, and
+          other services like airport transfers or tours around the globe. These packages can provide cost savings and
+          convenience for
+          travelers.</p>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <i class="fas fa-plane"></i>
+        <h3>Faster Travel</h3>
+        <p> VoyageVista allow users to search for and book flights to their desired destinations. Users can input
+          their departure and arrival locations, travel dates, and preferences to find the best flight options at
+          competitive prices. Many travel websites also offer the option to compare prices from multiple airlines.</p>
+      </div>
+
+      <div class="cards" data-aos="fade-up">
+        <i class="fas fa-money-check"></i>
+        <h3>Secure Payment Processing</h3>
+        <p>VoyageVista prioritize the security of users' payment information and employ encryption and other
+          security measures to protect sensitive data this includes customer support through various channels, such as
+          live chat, email, or phone during your bookings, flight and trip</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- reviews -->
+  <section class="review" id="review">
+    <div class="heading" data-aos="fade-up">
+      <div class="word">
+        <span>H</span>
+        <span>A</span>
+        <span>P</span>
+        <span>P</span>
+        <span>Y</span>
+      </div>
+      <span class="space"></span>
+      <div class="word">
+        <span>C</span>
+        <span>U</span>
+        <span>S</span>
+        <span>T</span>
+        <span>O</span>
+        <span>M</span>
+        <span>E</span>
+        <span>R</span>
+      </div>
+    </div>
+
+    <div class="swiper review-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-aos="fade-up">
+          <div class="box">
+            <img src="web Images/id1.jpg" alt="customer">
+            <h3>Laura Berry</h3>
+            <p>I've been using this travel website VoyageVista for years, and it never disappoints. I love the ability
+              to read
+              reviews from other travelers, which helps me make informed decisions.I've recommended this website to all
+              everyone and
+              they've all had positive experiences as well.</p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-stroke"></i></li>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide" data-aos="fade-up">
+          <div class="box">
+            <img src="web Images/id2.jpg" alt="customer">
+            <h3>Leonardo DiCaprio</h3>
+            <p>This VoyageVista is my go-to for all things travel-related. Whether I'm booking flights, hotels, or
+              rental cars, I can do it all in one place.I love the ability to read
+              reviews from other travelers, which helps me make informed decisions. I've recommended this websit to
+              everyone.</p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-stroke"></i></li>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide" data-aos="fade-up">
+          <div class="box">
+            <img src="web Images/id3.jpg" alt="customer">
+            <h3>Rajesh Mehta</h3>
+            <p>I recently used this travel website VoyageVista to book a vacation, and I couldn't be happier with the
+              experience.
+              The prices were competitive, and I was able to save a significant amount
+              compared to booking directly through airlines and hotels.Current;y enjoying in dubai!!!</p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-stroke"></i></li>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide" data-aos="fade-up">
+          <div class="box">
+            <img src="web Images/id1.jpg" alt="customer">
+            <h3>William James</h3>
+            <p>The website's interface is clean and intuitive, making it a
+              breeze to find and compare options. The best part is that they often have exclusive deals and discounts,
+              so I know I'm getting a great value.The booking process was smooth, and I received
+              instant confirmation. I highly recommend this travel website.</p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-stroke"></i></li>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide" data-aos="fade-up">
+          <div class="box">
+            <img src="web Images/id1.jpg" alt="customer">
+            <h3>Veronica Gracy</h3>
+            <p>The booking process is
+              straightforward, and I appreciate the email updates and reminders leading up to my trip. Overall, a
+              fantastic resource for all your travel needs.The booking process was smooth, and I received
+              instant confirmation. I highly recommend this travel website for your next adventure!</p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-stroke"></i></li>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide" data-aos="fade-up">
+          <div class="box">
+            <img src="web Images/id1.jpg" alt="customer">
+            <h3>Sebastian Benny</h3>
+            <p>VoyageVista is my go-to for all things travel-related. Whether I'm booking flights, hotels, or
+              rental cars, I can do it all in one place. The website's interface is clean and intuitive. The best part
+              is that they often have exclusive deals and discounts,
+              so I know I'm getting a great value.</p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-stroke"></i></li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer" data-aos="fade-up">
+    <div class="box-container">
+      <div class="box">
+        <h3><i class="fa-regular fa-paper-plane" style="margin-right: 0;"></i> about us</h3>
+        <p>VoyageVista is an online platform or portal that provides a wide range of services and information related
+          to travel and tourism. This website is designed to help travelers plan and book various aspects of their
+          trips, including flights, hotels, vacation packages, car rentals, activities, and more.</p>
+      </div>
+
+      <div class="box">
+        <h3>branch locations</h3>
+        <a href="#">India</a>
+        <a href="#">Dubai</a>
+        <a href="#">USA</a>
+        <a href="#">Japan</a>
+      </div>
+
+      <div class="box">
+        <h3>policies</h3>
+        <a href="#">privacy policy </a>
+        <a href="#">cookie policy</a>
+        <a href="#">advertising policy</a>
+        <a href="#">terms of use</a>
+      </div>
+
+      <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fa-brands fa-facebook"></i>facebook</a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i>instagram</a>
+        <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+      </div>
+    </div>
+    <h1 class="credit">created by <span>Rashmi Gourh</span> all rights reserved</h1>
+  </section>
+
+  <script src="javascript/travel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".review-slider", {
+      spaceBetween: 20,
+      loop: false,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+
+  <!-- our aos data -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 400
+    });
+  </script>
+</body>
+
+</html>
